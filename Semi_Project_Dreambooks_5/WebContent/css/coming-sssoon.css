@@ -1,0 +1,194 @@
+
+.btn{
+    border-width: 2px;
+    background-color: rgba(0,0,0,.0);
+    font-weight: 400;
+    opacity: 0.8;
+    padding: 8px 16px;
+}
+.btn-info{
+     color: #d85b5b;
+    border-color: #d85b5b;
+}
+.btn:hover{
+    background-color: rgba(0,0,0,.0);
+    opacity: 1;
+}
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
+    color: #1084FF;
+    border-color: #1084FF;
+    background-color: rgba(0,0,0,.0);
+}
+
+.btn:active, .btn.active {
+    background-image: none;
+    box-shadow: none;
+}
+
+.btn-info.disabled, .btn-info[disabled], fieldset[disabled] .btn-info, .btn-info.disabled:hover, .btn-info[disabled]:hover, fieldset[disabled] .btn-info:hover, .btn-info.disabled:focus, .btn-info[disabled]:focus, fieldset[disabled] .btn-info:focus, .btn-info.disabled:active, .btn-info[disabled]:active, fieldset[disabled] .btn-info:active, .btn-info.disabled.active, .btn-info.active[disabled], fieldset[disabled] .btn-info.active {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #2C93FF;
+}
+
+.btn-fill{
+    color: #FFFFFF;
+    opacity: 1;
+}
+.btn-fill:hover, .btn-fill:active, .btn-fill:focus{
+    color: #FFFFFF;
+}
+.btn-info.btn-fill{
+    background-color: #2C93FF;
+    border-color: #2C93FF;
+}
+
+.btn-info.btn-fill:hover, .btn-info.btn-fill:focus, .btn-info.btn-fill:active, .btn-info.btn-fill.active, .open .dropdown-toggle.btn-info.btn-fill {
+    background-color: #1084FF;
+    border-color: #1084FF;
+}
+
+/*버튼*/
+.subscribe{position: fixed; right: 100px; top: 50px; border-radius: 10%;}
+.btn-findId{position: absolute; left: 120px; top: 290px; background-color: #00BBFF; border-color: #00BBFF; border-width: 0; color: #FFFFFF;}
+.btn-findId:hover {background-color: #00A4E4; color: #FFFFFF;}
+.btn-findPwd{position: absolute; left: 105px; top: 290px; background-color: #00BBFF; border-color: #00BBFF; border-width: 0; color: #FFFFFF;}
+.btn-findPwd:hover {background-color: #00A4E4; color: #FFFFFF;}
+.main{
+    background-position: center center;
+    background-size: cover;
+    background: fixed round;
+    height: auto;
+    left: 0;
+    height: 2020px;
+    min-width: 100%;
+    position: relative;
+    top: 0;
+    width: auto;
+}
+.cover{
+    position: fixed;
+    opacity: 1;
+    background-color: rgba(0,0,0,.6);
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.cover.black{
+    background-color: rgba(0,0,0,.6);
+}
+.wrapper{height: 800px;}
+
+/*title*/
+.container .title {
+        height: 700px;
+        position: absolute;
+        padding-top: 200px; 
+        width: 100%; 
+        opacity: 0;
+        animation-name: title1;
+        animation-duration: 10s; 
+        /* animation-iteration-count: infinite; */
+        animation-direction: alternate; 
+        animation-fill-mode: forwards;}
+@keyframes title1 {  0%{opacity: 1; left:0; top: -500px;}
+                    25%{opacity: 1; left:0; top: 50px;}
+                  100%{opacity: 1;  left:0; top:100px;}
+                 }
+/*logo*/
+.main .logo{
+    color: #FFFFFF;
+    font-size: 56px;
+    font-weight: 300;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
+    margin-top: 150px;
+    z-index: 3;
+}
+.main .logo.cursive{
+    font-family: 'Grand Hotel',cursive;
+    font-size: 100px;
+}
+
+.main .content{
+    position: relative;
+    z-index: 4;
+}
+.main .motto{
+    min-height: 140px;
+}
+.main .motto, .main .subscribe .info-text {
+    font-size: 27px;
+    color: #FFFFFF;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
+    text-align: center;
+    margin-top: -17px;
+}
+.main .subscribe .info-text{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.footer{
+    position: relative;
+    bottom: 20px;
+    right: 0px;
+    width: 100%;
+    color: #AAAAAA;
+    z-index: 4;
+    text-align: right;
+    margin-top: 50px;
+}
+.container{
+    text-align: center;
+}
+
+.motto {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 50px;
+}
+/*wrap1*/
+.wrap1 {position: relative; height: 1000px; width: 100%; background-color: #b596fd;}
+.wrap1 h1 { font-family: 'Nanum Pen Script', cursive;
+            font-size: 100px;position: absolute; right: 400px; top:290px;}
+.wrap1 h1:first-child {top:200px;}
+.wrap1 h1:last-of-type {top:380px;}
+.wrap1 img {position: absolute; top:200px; left: 150px;}
+
+.list .up-on-scroll {
+    transition: transform 0.7s, opacity 1s;
+}
+button {
+    margin: auto 10px;
+    position: relative;
+  }
+
+@media (min-width:219px){        
+    .main .subscribe .form-group{
+        width: auto;
+    }   
+    .main .subscribe .form-inline .btn{
+        width: 100%;
+    }   
+}
+@media (min-width:768px){        
+    .main .subscribe .form-inline .btn{
+        width: auto;
+    }   
+}
+@media (min-width:991px){        
+    .main .subscribe .form-group{
+        width: 190px;
+    }   
+    .footer{
+        position: fixed;
+        bottom: 20px;
+    }
+}
+@media (min-width:1200px){        
+    .main .subscribe .form-group{
+        width: 250px;
+    }   
+}
